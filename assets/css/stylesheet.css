@@ -1,0 +1,22 @@
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+label {
+    width: 100%;
+    font-weight: bolder;
+}
+
+.btn {
+    width: 100%;
+}
+
+#weather-search {
+    width: 100%;
+}
+
+.wInfo {
+    display: block;
+}

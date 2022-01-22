@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./assets/css/stylesheet.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header class="header"><h1 class="headerh1">Weather Dashboard</h1></header>
+    <div class="row">
+        <div class="col-4">
+            left side
+            <label for="weather-search">Search for a City:</label>
+            <input type="search" id="weather-search" aria-label="Search city for weather">
+            <button id="searchButton" type="submit" class="btn btn-info">Search</button>
+            <div id="searchedCities"></div>
+            
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-12 border border-dark">
+                    <span id="citySearched" class="wInfo">City & Date</span> <img id="wIcon"/>
+                    <span id="temp" class="wInfo">Temp</span>
+                    <span id="wind" class="wInfo">Wind</span>
+                    <span id="humidity" class="wInfo">Humidity</span>
+                    <span id="uvIndex" class="wInfo">UV Index</span>
+                </div>
+            </div>
+            <section id="forecast" class="row mt-3">
+
+            </section>
+            <!-- <div class="row">    
+                <div class="col-12">
+                    5-Day Forecast
+                    <div class="row">
+                    <div class="col-2 border border-dark" id="day1">1</div>
+                    <div class="col-2 border border-dark" id="day2">2</div>
+                    <div class="col-2 border border-dark" id="day3">3</div>
+                    <div class="col-2 border border-dark" id="day4">4</div>
+                    <div class="col-2 border border-dark" id="day5">5</div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- <label for="weather-search">Search weather for cities:</label>
+    <input type="search" id="weather-search" aria-label="Search city for weather">
+    <button id="searchButton">Search</button> -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+    integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+    crossorigin="anonymous"
+  ></script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+    integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+    crossorigin="anonymous"
+  ></script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+    integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+    crossorigin="anonymous"
+  ></script>
+    <script src="./assets/js/javascript.js"></script>
+</body>
+
+</html>
